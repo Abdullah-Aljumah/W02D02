@@ -56,14 +56,15 @@ const totalCharacters = (arr) => {
   return counter1;
 };
 
-// End Task Five 
+// End Task Five
 
-// Task Six 
+// Task Six
 
 const houseSize = (arr) => {
-    const sizes = [];
-    for (const key in arr) {
-        sizes.push(`house : ${arr[key]} members ${arr[key]}`);
-    }
-    return sizes;
-}
+  const sizes = [];
+  for (i = 0; i < arr.length; i++) {
+    sizes.push({House :arr[i]  , members: arr[i + 1]});
+    i++;
+  }
+  return sizes;
+};
