@@ -114,18 +114,18 @@ function addPurchases(arr) {
 
 // Extra Two
 function sortNumbers(arr) {
-  const newArr = arr.sort(function (a, b) {
+  arr.sort((a, b) => {
     return a - b;
   });
-  return newArr;
+  return arr;
 }
 // End Extra Two
 
 // Extra Three
 function sortBackwards(arr) {
-  const newArr = arr.sort(function (a, b) {
+  arr.sort((a, b) => {
     return b - a;
   });
-  return newArr;
+  return arr;
 }
 // End Extra Three
